@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <!-- Responsive viewport for mobile scaling -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Webradio Auswahl</title>
+  <title>Webradio</title>
   <!-- Preconnect + font import for faster font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -143,6 +143,7 @@
       flex: 0 0 100%;
       display: grid;
       gap: 14px;
+      align-content: start;
       padding-bottom: 4px;
       animation: folderIn 0.45s ease both;
     }
@@ -154,6 +155,9 @@
       border-radius: 12px;
       background: rgba(15, 26, 46, 0.35);
       border: 1px solid rgba(255, 255, 255, 0.06);
+      height: 56px;
+      overflow: hidden;
+      align-content: center;
       max-width: 100%;
       width: fit-content;
     }
@@ -440,7 +444,7 @@
   <main class="shell">
     <header>
       <div class="title">
-        <h1>Webradio Auswahl</h1>
+        <h1>Webradio</h1>
         <p>Kompakt, schnell und sofort spielbereit. Wische seitlich, um Ordner zu wechseln.</p>
       </div>
       <div class="now-playing">
@@ -464,8 +468,9 @@
           <article class="card" data-stream="https://st01.dlf.de/dlf/01/128/mp3/stream.mp3" data-name="Deutschlandfunk">
             <div class="card-header">
               <div class="logo">
-                <img src="https://www.deutschlandfunk.de/favicon.ico" alt="Deutschlandfunk Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">DE</span>
+  <img src="logos/deutschlandfunk.png" alt="Deutschlandfunk Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">News</span>
             </div>
             <h3>Deutschlandfunk</h3>
@@ -484,8 +489,9 @@
           <article class="card" data-stream="https://st02.sslstream.dlf.de/dlf/02/128/mp3/stream.mp3" data-name="Deutschlandfunk Kultur">
             <div class="card-header">
               <div class="logo">
-                <img src="https://www.deutschlandfunkkultur.de/favicon.ico" alt="Deutschlandfunk Kultur Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">DK</span>
+  <img src="logos/deutschlandfunk-kultur.png" alt="Deutschlandfunk Kultur Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Kultur</span>
             </div>
             <h3>Deutschlandfunk Kultur</h3>
@@ -504,8 +510,9 @@
           <article class="card" data-stream="https://streams.radiobob.de/bob-national/mp3-192/mediaplayer" data-name="Radio BOB">
             <div class="card-header">
               <div class="logo">
-                <img src="logos/RadioBOB.webp" alt="Radio BOB Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">RB</span>
+  <img src="logos/radio-bob.png" alt="Radio BOB Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Rock</span>
             </div>
             <h3>Radio BOB</h3>
@@ -532,8 +539,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/hr/hr1/live/mp3/high" data-name="hr1">
             <div class="card-header">
               <div class="logo">
-                <img src="https://www.hr1.de/favicon.png?v=3.85.2" alt="hr1 Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">HR</span>
+  <img src="logos/hr1.png" alt="hr1 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Pop</span>
             </div>
             <h3>hr1</h3>
@@ -552,8 +560,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/hr/hr2/live/mp3/high" data-name="hr2">
             <div class="card-header">
               <div class="logo">
-                <img src="https://www.hr2.de/favicon.png?v=3.85.2" alt="hr2 Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">HR</span>
+  <img src="logos/hr2.png" alt="hr2 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Kultur</span>
             </div>
             <h3>hr2</h3>
@@ -572,8 +581,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/hr/hr3/live/mp3/high" data-name="hr3">
             <div class="card-header">
               <div class="logo">
-                <img src="https://www.hr3.de/favicon-256.png" alt="hr3 Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">HR</span>
+  <img src="logos/hr3.png" alt="hr3 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Hits</span>
             </div>
             <h3>hr3</h3>
@@ -592,8 +602,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/hr/hrinfo/live/mp3/high" data-name="hr info">
             <div class="card-header">
               <div class="logo">
-                <img src="logos/HR%20info.webp" alt="hr info Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">HI</span>
+  <img src="logos/hr-info.png" alt="hr info Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">News</span>
             </div>
             <h3>hr info</h3>
@@ -620,8 +631,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/br/br1/obb/mp3/mid" data-name="br1">
             <div class="card-header">
               <div class="logo">
-                <img src="https://api.ardmediathek.de/image-service/images/urn:ard:image:b366004f6196d70c?w=512" alt="br1 Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">BR</span>
+  <img src="logos/br1.png" alt="br1 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Oldies</span>
             </div>
             <h3>br1</h3>
@@ -640,8 +652,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/br/br2/live/mp3/mid" data-name="br2">
             <div class="card-header">
               <div class="logo">
-                <img src="https://api.ardmediathek.de/image-service/images/urn:ard:image:5d72d15e88d309ec?w=512" alt="br2 Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">BR</span>
+  <img src="logos/br2.png" alt="br2 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Wissen</span>
             </div>
             <h3>br2</h3>
@@ -660,8 +673,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/br/br3/live/mp3/mid" data-name="br3">
             <div class="card-header">
               <div class="logo">
-                <img src="https://api.ardmediathek.de/image-service/images/urn:ard:image:52fd25fc45de7c6a?w=512" alt="br3 Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">BR</span>
+  <img src="logos/br3.png" alt="br3 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Pop</span>
             </div>
             <h3>br3</h3>
@@ -680,8 +694,9 @@
           <article class="card" data-stream="https://dispatcher.rndfnk.com/br/br24/live/mp3/mid" data-name="br24">
             <div class="card-header">
               <div class="logo">
-                <img src="https://api.ardmediathek.de/image-service/images/urn:ard:image:c3ab9296f3b282bf?w=512" alt="br24 Logo" loading="lazy" />
-              </div>
+  <span class="logo-text">BR</span>
+  <img src="logos/br24.png" alt="br24 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">News</span>
             </div>
             <h3>br24</h3>
@@ -708,9 +723,9 @@
           <article class="card" data-stream="https://relay1.social3.hr/radio/8310/radio.mp3?&_ic2=1" data-name="Narodni Radio">
             <div class="card-header">
               <div class="logo">
-                <span class="logo-text">NR</span>
-                <img src="https://narodni.hr/wp-content/uploads/2021/10/narodni-white222.png" alt="Narodni Radio Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
-              </div>
+  <span class="logo-text">NR</span>
+  <img src="logos/narodni-radio.png" alt="Narodni Radio Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Pop</span>
             </div>
             <h3>Narodni Radio</h3>
@@ -729,9 +744,9 @@
           <article class="card" data-stream="https://stream.otvoreni.hr:443/otvoreni" data-name="Otvoreni Radio">
             <div class="card-header">
               <div class="logo">
-                <span class="logo-text">OR</span>
-                <img src="https://otvoreni.hr/favicon.svg" alt="Otvoreni Radio Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
-              </div>
+  <span class="logo-text">OR</span>
+  <img src="logos/otvoreni-radio.png" alt="Otvoreni Radio Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Pop</span>
             </div>
             <h3>Otvoreni Radio</h3>
@@ -750,9 +765,9 @@
           <article class="card" data-stream="https://relay2.social3.hr/radio/8190/radio.mp3?&_ic2=1" data-name="Extra FM">
             <div class="card-header">
               <div class="logo">
-                <span class="logo-text">EF</span>
-                <img src="https://extrafm.hr/sw-content/uploads/2018/10/extrafm-2.png" alt="Extra FM Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
-              </div>
+  <span class="logo-text">EF</span>
+  <img src="logos/extra-fm.png" alt="Extra FM Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Urban</span>
             </div>
             <h3>Extra FM</h3>
@@ -772,13 +787,34 @@
           <article class="card" data-stream="https://s8.iqstreaming.com:2020/stream/radio-kaj2" data-name="Radio Kaj">
             <div class="card-header">
               <div class="logo">
-                <span class="logo-text">RK</span>
-                <img src="https://kaj.hr/wp-content/uploads/2024/01/logoradiokaj-2.png" alt="Radio Kaj Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
-              </div>
+  <span class="logo-text">RK</span>
+  <img src="logos/radio-kaj.png" alt="Radio Kaj Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
               <span class="badge">Regional</span>
             </div>
             <h3>Radio Kaj</h3>
             <p>Regionale Infos und Musik.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://28513.live.streamtheworld.com/PULAAAC_SC" data-name="HRT Radio Pula">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">HR</span>
+  <img src="logos/hrt-radio-pula.png" alt="HRT Radio Pula Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Regional</span>
+            </div>
+            <h3>HRT Radio Pula</h3>
+            <p>Istrien, regionale Infos und kroatische Musik.</p>
             <div class="action">
               <span class="play-indicator">
                 <span class="bars" aria-hidden="true">
@@ -796,9 +832,219 @@
       <section class="folder" data-folder="USA">
         <div class="folder-header">
           <h2>USA</h2>
-          <p>US-Sender folgen bald.</p>
+          <p>Coast to coast: Indie, Jazz, News und Talk.</p>
         </div>
-        <div class="empty-state">Noch keine Sender hinterlegt.</div>
+        <section class="player">
+          <article class="card" data-stream="https://kexp-mp3-128.streamguys1.com/kexp128.mp3" data-name="KEXP 90.3">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">K9</span>
+  <img src="logos/kexp-90-3.png" alt="KEXP 90.3 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Indie</span>
+            </div>
+            <h3>KEXP 90.3</h3>
+            <p>Alternative, indie und lokale Sessions aus Seattle.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://streams.kqed.org/kqedradio" data-name="KQED 88.5">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">K8</span>
+  <img src="logos/kqed-88-5.png" alt="KQED 88.5 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">News</span>
+            </div>
+            <h3>KQED 88.5</h3>
+            <p>California news, Kultur und NPR-Programme.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://streams.kcrw.com/kcrw_mp3" data-name="KCRW 89.9">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">K8</span>
+  <img src="logos/kcrw-89-9.png" alt="KCRW 89.9 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Eclectic</span>
+            </div>
+            <h3>KCRW 89.9</h3>
+            <p>Eclectic music, culture und LA stories.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://streams.kut.org/4428_192.mp3" data-name="KUTX 98.9">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">K9</span>
+  <img src="logos/kutx-98-9.png" alt="KUTX 98.9 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Alt</span>
+            </div>
+            <h3>KUTX 98.9</h3>
+            <p>Austin music, lokale Artists und neue Entdeckungen.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://stream.wbez.org/wbez128.mp3" data-name="WBEZ 91.5">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">W9</span>
+  <img src="logos/wbez-91-5.png" alt="WBEZ 91.5 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">News</span>
+            </div>
+            <h3>WBEZ 91.5</h3>
+            <p>Chicago news, talk und NPR-Highlights.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://ice24.securenetsystems.net/WAMU" data-name="WAMU 88.5">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">W8</span>
+  <img src="logos/wamu-88-5.png" alt="WAMU 88.5 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">News</span>
+            </div>
+            <h3>WAMU 88.5</h3>
+            <p>DC news, politics und public radio.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://www.wwoz.org/listen/hi" data-name="WWOZ 90.7">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">W9</span>
+  <img src="logos/wwoz-90-7.png" alt="WWOZ 90.7 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Jazz</span>
+            </div>
+            <h3>WWOZ 90.7</h3>
+            <p>New Orleans jazz, brass und local culture.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://ais-sa8.cdnstream1.com/3629_128.mp3" data-name="WBGO 88.3">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">W8</span>
+  <img src="logos/wbgo-88-3.png" alt="WBGO 88.3 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Jazz</span>
+            </div>
+            <h3>WBGO 88.3</h3>
+            <p>Jazz klassiker, live sets und Newark vibes.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://fm939.wnyc.org/wnycfm" data-name="WNYC 93.9">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">W9</span>
+  <img src="logos/wnyc-93-9.png" alt="WNYC 93.9 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Talk</span>
+            </div>
+            <h3>WNYC 93.9</h3>
+            <p>NYC news, talk und storytelling.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://stream0.wfmu.org/freeform-extrahigh-primary.aac" data-name="WFMU 91.1">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">W9</span>
+  <img src="logos/wfmu-91-1.png" alt="WFMU 91.1 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Freeform</span>
+            </div>
+            <h3>WFMU 91.1</h3>
+            <p>Freeform radio mit mutigen, handgemachten Shows.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+        </section>
       </section>
 
       <section class="folder" data-folder="Country">
@@ -806,7 +1052,217 @@
           <h2>Country</h2>
           <p>Country, Folk und Americana.</p>
         </div>
-        <div class="empty-state">Noch keine Sender hinterlegt.</div>
+        <section class="player">
+          <article class="card" data-stream="https://26343.live.streamtheworld.com/977_COUNTRY_SC" data-name=".977 Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">9C</span>
+  <img src="logos/977-country.png" alt=".977 Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Hits</span>
+            </div>
+            <h3>.977 Country</h3>
+            <p>Moderne Country-Hits und bekannte Stars nonstop.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://listen.181fm.com/181-highway_128k.mp3" data-name="181.FM - Highway 181">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">1F</span>
+  <img src="logos/181-fm-highway-181.png" alt="181.FM - Highway 181 Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Modern</span>
+            </div>
+            <h3>181.FM Highway 181</h3>
+            <p>Aktuelle Country-Hits mit Nashville-Flair.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://listen.181fm.com/181-80scountry_128k.mp3" data-name="181.FM - 80's Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">1F</span>
+  <img src="logos/181-fm-80-s-country.png" alt="181.FM - 80's Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">80s</span>
+            </div>
+            <h3>181.FM 80's Country</h3>
+            <p>80er-Klassiker mit Twang und Steel Guitar.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://listen.181fm.com/181-kickincountry_128k.mp3" data-name="181.FM - Kickin' Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">1F</span>
+  <img src="logos/181-fm-kickin-country.png" alt="181.FM - Kickin' Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Upbeat</span>
+            </div>
+            <h3>181.FM Kickin' Country</h3>
+            <p>Schneller, energiegeladener Country-Mix.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://listen.181fm.com/181-90scountry_128k.mp3" data-name="181.FM - 90's Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">1F</span>
+  <img src="logos/181-fm-90-s-country.png" alt="181.FM - 90's Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">90s</span>
+            </div>
+            <h3>181.FM 90's Country</h3>
+            <p>Die große Country-Ära der 90er Jahre.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://streaming.radiostreamlive.com/radiocountrylive_devices" data-name="Radio Country Live New York">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">RC</span>
+  <img src="logos/radio-country-live-new-york.png" alt="Radio Country Live New York Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Indie</span>
+            </div>
+            <h3>Radio Country Live</h3>
+            <p>Indie Country, Singer-Songwriter und Roots.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://bigrradio.cdnstream1.com/5103_128" data-name="2000 FM - Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">2F</span>
+  <img src="logos/2000-fm-country.png" alt="2000 FM - Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Mix</span>
+            </div>
+            <h3>2000 FM Country</h3>
+            <p>Country-Hits von den 90ern bis heute.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://ice24.securenetsystems.net/WAMU" data-name="Bluegrass Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">BC</span>
+  <img src="logos/bluegrass-country.png" alt="Bluegrass Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Bluegrass</span>
+            </div>
+            <h3>Bluegrass Country</h3>
+            <p>Banjo, Fiddle und klassische Roots-Sounds.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://listen.181fm.com/181-realcountry_128k.mp3" data-name="181.FM - Real Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">1F</span>
+  <img src="logos/181-fm-real-country.png" alt="181.FM - Real Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Classic</span>
+            </div>
+            <h3>181.FM Real Country</h3>
+            <p>Klassischer Country mit Honky-Tonk-Feeling.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://ais-sa2.cdnstream1.com/1976_128.mp3" data-name="America's Country">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">AC</span>
+  <img src="logos/america-s-country.png" alt="America's Country Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Americana</span>
+            </div>
+            <h3>America's Country</h3>
+            <p>Americana, Outlaw und moderne Klassiker.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+        </section>
       </section>
 
       <section class="folder" data-folder="Japan">
@@ -814,16 +1270,114 @@
           <h2>Japan</h2>
           <p>J-Pop, City Pop und News.</p>
         </div>
-        <div class="empty-state">Noch keine Sender hinterlegt.</div>
+        <section class="player">
+          <article class="card" data-stream="https://stream.gensokyoradio.net/3/" data-name="Gensokyo Radio">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">GR</span>
+  <img src="logos/gensokyo-radio.png" alt="Gensokyo Radio Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">J-Mix</span>
+            </div>
+            <h3>Gensokyo Radio</h3>
+            <p>Japanische Indie- und Game-Sounds rund um Touhou.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://streamer.radio.co/s83eb8ff39/listen" data-name="Super Tokio Radio">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">ST</span>
+  <img src="logos/super-tokio-radio.png" alt="Super Tokio Radio Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Global</span>
+            </div>
+            <h3>Super Tokio Radio</h3>
+            <p>Latin Pop, urbane Sounds und japanische Vibes.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://jenny.torontocast.com:2000/stream/J1HITS" data-name="J1 HITS">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">JH</span>
+  <img src="logos/j1-hits.png" alt="J1 HITS Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Hits</span>
+            </div>
+            <h3>J1 HITS</h3>
+            <p>J-Pop und aktuelle Chart-Hits, rund um die Uhr.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://s3.radio.co/sc8d895604/listen" data-name="Ashiya Radio">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">AR</span>
+  <img src="logos/ashiya-radio.png" alt="Ashiya Radio Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">Local</span>
+            </div>
+            <h3>Ashiya Radio</h3>
+            <p>Lokale Themen, Kultur und Musik aus Ashiya.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+
+          <article class="card" data-stream="https://play.streamafrica.net/japancitypop" data-name="Japan City Pop">
+            <div class="card-header">
+              <div class="logo">
+  <span class="logo-text">JC</span>
+  <img src="logos/japan-city-pop.png" alt="Japan City Pop Logo" loading="lazy" onload="this.previousElementSibling.style.opacity='0';" onerror="this.previousElementSibling.style.opacity='1'; this.style.display='none';" />
+</div>
+              <span class="badge">City Pop</span>
+            </div>
+            <h3>Japan City Pop</h3>
+            <p>City Pop Klassiker und moderne Retro-Vibes.</p>
+            <div class="action">
+              <span class="play-indicator">
+                <span class="bars" aria-hidden="true">
+                  <span></span><span></span><span></span>
+                </span>
+                Live stream
+              </span>
+              <span>Play</span>
+            </div>
+          </article>
+        </section>
       </section>
 
-      <section class="folder" data-folder="China">
-        <div class="folder-header">
-          <h2>China</h2>
-          <p>C-Pop und asiatische Charts.</p>
-        </div>
-        <div class="empty-state">Noch keine Sender hinterlegt.</div>
-      </section>
       </div>
     </div>
 
@@ -868,6 +1422,96 @@
       window.webkit.messageHandlers.haptics.postMessage({ type });
     }
 
+    function sendNowPlaying(payload) {
+      if (!window.webkit || !window.webkit.messageHandlers || !window.webkit.messageHandlers.nowPlaying) {
+        return;
+      }
+      window.webkit.messageHandlers.nowPlaying.postMessage(payload);
+    }
+
+    function resolveLogoData(img, url) {
+      return new Promise((resolve) => {
+        if (!img) {
+          resolve("");
+          return;
+        }
+        const resolveFromImage = () => {
+          const width = img.naturalWidth || 0;
+          const height = img.naturalHeight || 0;
+          if (!width || !height) {
+            resolve("");
+            return;
+          }
+          const canvas = document.createElement("canvas");
+          canvas.width = width;
+          canvas.height = height;
+          const ctx = canvas.getContext("2d");
+          if (!ctx) {
+            resolve("");
+            return;
+          }
+          try {
+            ctx.drawImage(img, 0, 0, width, height);
+            resolve(canvas.toDataURL("image/png"));
+          } catch (error) {
+            if (!url) {
+              resolve("");
+              return;
+            }
+            fetch(url)
+              .then((response) => response.blob())
+              .then((blob) => new Promise((readResolve) => {
+                const reader = new FileReader();
+                reader.onload = () => readResolve(reader.result);
+                reader.onerror = () => readResolve("");
+                reader.readAsDataURL(blob);
+              }))
+              .then((dataUrl) => resolve(typeof dataUrl === "string" ? dataUrl : ""))
+              .catch(() => resolve(""));
+          }
+        };
+
+        if (img.complete && img.naturalWidth) {
+          resolveFromImage();
+          return;
+        }
+
+        const onLoad = () => resolveFromImage();
+        img.addEventListener("load", onLoad, { once: true });
+        setTimeout(() => resolve(""), 800);
+      });
+    }
+
+    function updateMediaSession(title, logoPath, logoUrl) {
+      if (!("mediaSession" in navigator)) {
+        return;
+      }
+      let artwork = [];
+      const rawArtworkUrl = logoUrl || logoPath || "";
+      if (rawArtworkUrl) {
+        try {
+          const resolved = new URL(rawArtworkUrl, window.location.href).toString();
+          artwork = [
+            { src: resolved, sizes: "512x512", type: "image/png" }
+          ];
+        } catch (_) {
+          artwork = [];
+        }
+      }
+      navigator.mediaSession.metadata = new MediaMetadata({
+        title,
+        artist: "",
+        album: "Webradio",
+        artwork
+      });
+      navigator.mediaSession.setActionHandler("play", () => {
+        audio.play().catch(() => {});
+      });
+      navigator.mediaSession.setActionHandler("pause", () => {
+        audio.pause();
+      });
+    }
+
     // Toggle the active class on the selected card
     function setActive(card) {
       cards.forEach((item) => item.classList.remove("active"));
@@ -880,6 +1524,9 @@
     function playStation(card) {
       const streamUrl = card.dataset.stream;
       const name = card.dataset.name;
+      const logoImg = card.querySelector(".logo img");
+      const logoPath = logoImg ? logoImg.getAttribute("src") : "";
+      const logoUrl = logoPath && /^https?:/i.test(logoPath) ? logoPath : "";
 
       if (!streamUrl) {
         setStatus("Kein Stream vorhanden.");
@@ -897,6 +1544,14 @@
       nowPlaying.textContent = name;
       liveDot.classList.add("active");
       toggleBtn.textContent = "Pause";
+      document.title = name;
+      updateMediaSession(name, logoPath, logoUrl);
+      sendNowPlaying({ name, logo: logoUrl, logoPath });
+      resolveLogoData(logoImg, logoUrl).then((logoData) => {
+        if (logoData) {
+          sendNowPlaying({ name, logoData });
+        }
+      });
 
       audio
         .play()
@@ -1038,6 +1693,8 @@
       setActive(null);
       nowPlaying.textContent = "Noch kein Sender";
       setStatus("Stop.");
+      document.title = "Webradio";
+      sendNowPlaying({ clear: true });
     });
 
     // Handle stream end event (rare for live streams)
@@ -1045,6 +1702,8 @@
       toggleBtn.textContent = "Play";
       liveDot.classList.remove("active");
       setStatus("Stream beendet.");
+      document.title = "Webradio";
+      sendNowPlaying({ clear: true });
     });
   </script>
 </body>

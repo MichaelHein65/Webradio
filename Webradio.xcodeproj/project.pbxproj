@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9F3E1A2B3C4D5E6F7A8B9C01 /* Webradio/WebContent in Resources */ = {isa = PBXBuildFile; fileRef = 9F3E1A2B3C4D5E6F7A8B9C02 /* Webradio/WebContent */; };
-		9F3E1A2B3C4D5E6F7A8B9C05 /* Webradio/WebContent/logos in Resources */ = {isa = PBXBuildFile; fileRef = 9F3E1A2B3C4D5E6F7A8B9C06 /* Webradio/WebContent/logos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45ED8E442F1BBE0400295CAC /* Webradio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Webradio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F3E1A2B3C4D5E6F7A8B9C02 /* Webradio/WebContent */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Webradio/WebContent; sourceTree = SOURCE_ROOT; };
-		9F3E1A2B3C4D5E6F7A8B9C06 /* Webradio/WebContent/logos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Webradio/WebContent/logos; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -57,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				9F3E1A2B3C4D5E6F7A8B9C02 /* Webradio/WebContent */,
-				9F3E1A2B3C4D5E6F7A8B9C06 /* Webradio/WebContent/logos */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -127,7 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F3E1A2B3C4D5E6F7A8B9C01 /* Webradio/WebContent in Resources */,
-				9F3E1A2B3C4D5E6F7A8B9C05 /* Webradio/WebContent/logos in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +274,7 @@
 				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = audio;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -311,6 +308,7 @@
 				INFOPLIST_KEY_NSAppTransportSecurity_NSAllowsArbitraryLoads = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UIBackgroundModes = audio;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

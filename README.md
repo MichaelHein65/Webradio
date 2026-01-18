@@ -3,6 +3,10 @@
 Eine schlanke iOS-App mit eingebettetem Web-UI fuer die Senderauswahl.
 Die Senderdaten und das Layout liegen im HTML und werden von der App geladen.
 
+## Projektstatus
+Vorerst abgeschlossen (Wartung nach Bedarf). Details zur Dokumentation, Git-Workflow
+und GitHub-Setup stehen in `DOCUMENTATION.md`.
+
 ## Struktur
 - `Webradio/WebContent/index.html`: Haupt-UI fuer die App (Senderlisten, Styles, Player).
 - `Webradio/WebContent/logos/`: Lokale Logos (optional).

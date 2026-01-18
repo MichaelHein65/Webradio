@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 96 96" role="img" aria-label=".977 Country">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d66d2a"/>
+      <stop offset="1" stop-color="#a14a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="20" fill="url(#bg)"/>
+  <text x="48" y="54" text-anchor="middle" font-family="'Avenir Next', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="700" fill="#ffffff">.977</text>
+</svg>
